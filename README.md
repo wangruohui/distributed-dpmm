@@ -20,17 +20,15 @@ Please kindly cite our paper if the code helps you. Thank you.
 }
 ```
 
-# Contents
-- [Usage Guide](#usage-guide)
-  * [Install Julia and required packages](#install-julia-and-required-packages)
-  * [Prepare some data](#prepare-some-data)
-  * [Test the CGS baseline](#test-the-cgs-baseline)
-  * [Test the CGS baseline multiple times](#test-the-cgs-baseline-multiple-times)
-  * [Test three proposed algorithms](#test-three-proposed-algorithms)
-  * [Implementation of other baselines](#implementation-of-other-baselines)
-  * [Scale to multiple servers](#scale-to-multiple-servers)
-
 # Usage Guide
+* [Install Julia and required packages](#install-julia-and-required-packages)
+* [Prepare some data](#prepare-some-data)
+* [Test the CGS baseline](#test-the-cgs-baseline)
+* [Test the CGS baseline for multiple times](#test-the-cgs-baseline-for-multiple-times)
+* [Test three proposed algorithms](#test-three-proposed-algorithms)
+* [Implementation of other baselines](#implementation-of-other-baselines)
+* [Scale to multiple servers](#scale-to-multiple-servers)
+
 ## Install Julia and required packages
 
 Our program is implemented using the [Julia programming language](https://julialang.org/).
@@ -255,7 +253,7 @@ This action need to be performed once between any directional pair of servers.
 
 Just make sure from either server, after typing `ssh $ANOTHER_IP_ADDRESS`, the console of the destination server appears without any interruption.
 
-### Launch Julia workers from multiple servers
+### Launch Julia workers from multiple nodes
 Launch Julia from one server (`10.1.72.21` here as example) by typing `julia` from the console.
 After it starts, issue
 ```julia
